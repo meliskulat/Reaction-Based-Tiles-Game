@@ -1,0 +1,264 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+
+#coverpage {
+  position: fixed;
+  inset: 0;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  cursor: pointer;
+  color: #fff;
+  text-align: center;
+}
+
+.cover {
+  background: #3c3c5a;
+  border-radius: 15px;
+  padding: 40px;
+  min-width: 380px;
+}
+
+.member {
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+  text-align: left;
+}
+
+.circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 15px;
+  object-fit: cover;
+  background: #eee;
+}
+
+#countdown {
+  position: fixed;
+  inset: 0;
+  background: #000;
+  color: #8a7cfb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 150px;
+  font-weight: 200;
+  z-index: 200;
+}
+
+/* 2. Oyun Ekranı */
+#game-screen {
+  position: fixed;
+  inset: 0;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+
+#hud {
+  display: flex;
+  justify-content: center;
+  padding: 28px 0;
+  border-bottom: 2px solid #eee;
+}
+
+.hud-inner {
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.hud-item {
+  text-align: center;
+  font-weight: 300;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.hud-item span {
+  display: block;
+  margin-top: 8px;
+  font-size: 44px;
+  font-weight: 200;
+}
+
+#current-score {
+  font-size: 84px !important;
+  font-weight: 300;
+  color: #7ad36a;
+}
+
+#timer {
+  color: #e26d6d;
+}
+
+
+#game-area {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: repeat(4, 100px);
+  background-color: #999;
+  gap: 1px;
+  border: 1px solid #999;
+}
+
+.tile {
+  background: #fff;
+  position: relative;
+  user-select: none;
+  transition: background-color 300ms ease;
+}
+
+.tile.black {
+  background-color: #000 !important;
+  cursor: pointer;
+}
+
+.tile.correct {
+  background-color: #7FE06B !important;
+  transition: background-color 0s;
+}
+
+
+.points-float {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: 300;
+  color: rgba(100, 100, 100, 0.8);
+  pointer-events: none;
+  transition: opacity 400ms ease, transform 400ms ease;
+}
+
+.points-float.fade {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+
+#tap-message {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 42px;
+  font-weight: 200;
+  color: #d4af37;
+  pointer-events: none;
+  z-index: 5;
+  transition: opacity 500ms;
+}
+
+#tap-message.hide {
+  opacity: 0;
+}
+
+
+#bottom-controls {
+  margin-top: 40px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#pointbar-wrap {
+  width: 300px;
+  height: 12px;
+  border: 1px solid #999;
+  background: #0000ff;
+  overflow: hidden;
+}
+
+#pointbar {
+  height: 100%;
+  width: 100%;
+  background: #00ced1;
+  transition: width 0.1s linear;
+}
+
+
+.status-msg-container {
+  position: absolute;
+  top: 40%; 
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 100;
+  width: 100%;
+}
+
+.new-hiscore-text, .time-is-up-text {
+  color: #ff0000;
+  font-size: 100px;
+  line-height: 1.1;
+  animation: popIn 0.5s cubic-bezier(0.17, 0.89, 0.32, 1.28);
+}
+.time-is-up-text{
+  font-weight: 300; 
+  text-shadow: 0 12px 18px rgba(0,0,0,0.45); 
+  
+}
+
+.new-hiscore-text{
+  font-weight: 300;
+  text-shadow: 0 12px 18px rgba(0,0,0,0.50); 
+}
+
+#end-game-container {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.f5-play-again {
+  font-size: 20px;
+  font-weight: 200;
+  color: #333;
+  margin-top: 10px;
+  animation: pulse 1.4s ease-in-out infinite;
+}
+
+.hidden {
+  display: none !important;
+}
+
+@keyframes popIn {
+  0% { transform: scale(0.8); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+  50% {
+    transform: scale(1.15);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+}

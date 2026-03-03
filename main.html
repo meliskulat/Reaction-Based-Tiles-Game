@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CTIS 255 - Project</title>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+    <script src="./helpers.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="visual.css">
+</head>
+<body>
+    <div id="coverpage">
+        <div class="cover">
+            <h1>Project Members</h1>
+            <div class="member">
+                <img src="./melis.png" class="circle" alt="Melis">
+                <div>
+                    <div class="member-name">Melis Kulat</div>
+                    <div class="member-info">Section: 04<br>22303490</div>
+                </div>
+            </div>
+            <div class="member">
+                <img src="./ipek.png" class="circle" alt="Ipek">
+                <div>
+                    <div class="member-name">Ipek Kisaoglu</div>
+                    <div class="member-info">Section: 04<br>22303219</div>
+                </div>
+            </div>
+        
+        </div>
+    </div>
+
+    <div id="countdown" class="hidden"></div>
+
+    <div id="game-screen" class="hidden">
+        <div id="hud">
+            <div class="hud-inner">
+                <div class="hud-item">HIGH SCORE<br><span id="high-score">0</span></div>
+                <div class="hud-item">SCORE<br><span id="current-score">0</span></div>
+                <div class="hud-item">TIME<br><span id="timer">10</span></div>
+            </div>
+        </div>
+
+       <div id="game-area">
+         <div id="board-wrapper">
+            <div class="grid-container">
+                <div class="tile"></div><div class="tile"></div><div class="tile"></div><div class="tile"></div>
+                <div class="tile"></div><div class="tile"></div><div class="tile"></div><div class="tile"></div>
+                <div class="tile"></div><div class="tile"></div><div class="tile"></div><div class="tile"></div>
+                <div class="tile"></div><div class="tile"></div><div class="tile"></div><div class="tile"></div>
+            </div>
+            <div id="tap-message">Tap the black tiles!</div>
+        </div>
+
+        <div id="bottom-controls">
+            <div id="pointbar-wrap">
+                <div id="pointbar"></div>
+            </div>
+            <div id="end-game-container"></div>
+        </div>
+    </div>
+</body>
+</html>
