@@ -7,28 +7,28 @@ Developed an interactive browser-based reaction game using JavaScript and DOM ma
 The key aspects of this project include:
 
 - The game features an interactive 4x4 grid where tiles are activated randomly using JavaScript to test player actions
-- Preprocessing data by handling null values, duplicates, outliers and converting categorical features
-- Visualizations for intuitive analysis of player ratings, openings impact and other attributes   
-- Feature engineering new attributes like game duration for additional context
-- Dimensionality reduction using PCA for visual detection of patterns
-- Training classification models like Logistic Regression, Random Forest and Neural Networks  
-- Comparing model performance to predict game winner between white player, black player or draw   
+- A real-time scoring logic is implemented with a system that rewards faster reaction times, each tile offers maximum 10 points
+-High score persistence is applied by using localStorage to save and display the best performance     
+- The user experience is enhanced with smooth CSS transitions, confetti effect for new high score
+- Automatic game management handles the 10-second timer and it states a prompt to play again for the user
+ 
 
 ## Tech Stack  
 
 **Language**: JavaScript, CSS, HTML  
 **Technologies**: DOM Manipulation    
-**Environment**: Local Web Browser  
+**Environment**: Visual Studio Code  
 
 ## Getting Started  
 
 ### Prerequisites  
 
-- Java 8  
+- Local Web Browser
+- Live Server(Optional): VS code extension for real-time development 
 
 ### Installation  
 
-- Install Lıve Server  
+- Install Live Server  
   ```bash
   ...  
   ```
