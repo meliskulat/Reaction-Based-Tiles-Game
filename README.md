@@ -43,7 +43,7 @@ The key aspects of this project include:
 ## Usage  
 
 - Launch with Live Server: Open the project folder and `index.html` in VS Code.  
-- Right click on ìndex.html`and choose `Open with Live Server`.  
+- Right click on `index.html` and choose `Open with Live Server`.  
 - On the web browser game will be live.  
 - Choose your player.     
 - You can follow the instructions on the page.  
