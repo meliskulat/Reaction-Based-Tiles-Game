@@ -24,11 +24,12 @@ The key aspects of this project include:
 ### Prerequisites  
 
 - Local Web Browser
+- Visual Studio Code: Recommended IDE for managing and running the project files
 - Live Server(Optional): VS code extension for real-time development 
 
 ### Installation  
 
-- Install Live Server  
+- Install Live Server: Open VS Code and go to the Extension Marketplace 
   ```bash
   ...  
   ```
@@ -37,16 +38,12 @@ The key aspects of this project include:
   ```bash
   git clone https://github.com/meliskulat/Reaction-Based-Tiles-Game.git  
   ```
-
-- Right-click on index.html in the VS Code explorer and select "Open with Live Server" to run in your default browser
-  ```bash
-  ...
-  ```
+  
   
 ## Usage  
 
-- Open `index.html`.  
-- Right click and choose `Open with Live Server`.  
+- Launch with Live Server: Open the project folder and `index.html` in VS Code.  
+- Right click on ìndex.html`and choose `Open with Live Server`.  
 - On the web browser game will be live.  
 - Choose your player.     
 - You can follow the instructions on the page.  
