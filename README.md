@@ -30,9 +30,6 @@ The key aspects of this project include:
 ### Installation  
 
 - Install Live Server: Open VS Code and go to the Extension Marketplace 
-  ```bash
-  ...  
-  ```
   
 - Clone the repository
   ```bash
