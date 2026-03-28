@@ -38,14 +38,14 @@ The key aspects of this project include:
   git clone https://github.com/meliskulat/Reaction-Based-Tiles-Game.git  
   ```
 
-- Start Live Server
+- Right-click on index.html in the VS Code explorer and select "Open with Live Server" to run in your default browser
   ```bash
   ...
   ```
   
 ## Usage  
 
-- Open `main.html`.  
+- Open `index.html`.  
 - Right click and choose `Open with Live Server`.  
 - On the web browser game will be live.  
 - Choose your player.     
