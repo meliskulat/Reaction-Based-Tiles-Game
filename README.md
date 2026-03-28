@@ -1,5 +1,5 @@
 # Reaction-Based-Tiles-Game
-Developed an interactive browser-based reaction game using JavaScript and DOM manipulation. The game features a 4x4 dynamic grid where a random tile turns black until clicked within a 10-second time limit, challenging users to react quickly. The game values less time passed between clicking the black tiles more, as the time between correct clicks increase, the point earned from clicking the black box drops. Implemented real-time scoring logic where faster clicks yield higher points, along with a high score system that updates automatically when a new record is achieved.s
+Developed an interactive browser-based reaction game using JavaScript and DOM manipulation. The game features a 4x4 dynamic grid where a random tile turns black until clicked within a 10-second time limit, challenging users to react quickly. The game values less time passed between clicking the black tiles more, as the time between correct clicks increase, the point earned from clicking the black box drops. Implemented real-time scoring logic where faster clicks yield higher points, along with a high score system that updates automatically when a new record is achieved.
 
 
 ## Project Overview 
